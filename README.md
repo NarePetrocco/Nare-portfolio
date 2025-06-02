@@ -1,6 +1,6 @@
 # Portfolio Website — v1
 
-Hola, soy [Tu Nombre], un desarrollador frontend enfocado en crear experiencias web atractivas, funcionales y modernas. Este portfolio lo construí con el objetivo de mostrar mis habilidades técnicas, mi enfoque en el diseño UI/UX y la pasión que tengo por el desarrollo web.
+Hola, soy Narella Petroxxo desarrolladora enfocado en crear experiencias web atractivas, funcionales y modernas. Este portfolio lo construí con el objetivo de mostrar mis habilidades técnicas, mi enfoque en el diseño UI/UX y la pasión que tengo por el desarrollo web.
 
 Aquí podrás ver algunos ejemplos de lo que puedo construir, así como la tecnología que domino actualmente.
 

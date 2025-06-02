@@ -28,7 +28,7 @@ export default function About() {
         charSpace={"mr-[0.001em]"}
         className={`uppercase ${syne.className} antialiased text-4xl md:text-5xl xl:text-6xl font-bold opacity-80`}
       >
-        Amplifico la voz de las marcas a través de la web.
+        Pasión por aprender, motivación por crear...
       </AnimatedTitle>
       <div className="grid grid-cols-1 lg:grid-cols-[8.5fr_3.5fr] gap-8 mt-6">
         <div className="grid grid-cols-1 antialiased gap-6 text-white/80 text-xl md:text-2xl">
@@ -40,11 +40,11 @@ export default function About() {
           </AnimatedBody>
           <AnimatedBody className="leading-[34px] md:leading-[39px]">
             Desde que escribí mis primeras líneas de código, he tratado de ir mejorando y ampliando
-            mis habilidades en desarrollo, incorporando diseño UI/UX y enfrentando desafíos cada
+            mis habilidades en desarrollo, incorporo diseño UI/UX y me gusta enfrentar nuevos desafíos
             para seguir creciendo dia a dia profesionalmente.
           </AnimatedBody>
           <AnimatedBody className="inline leading-[34px] md:leading-[39px]">
-            Cada desafío es único, por eso me aseguro de aprender y crecer con cada uno, dando siempre lo mejor de mí
+            Cada proyecto es único, por eso me aseguro de aprender y crecer con cada uno de ellos, dando siempre lo mejor de mí
             y entregando soluciones de las que los negocios se sientan orgullosos. ¿Querés saber más?
             Acá va... <br className="hidden md:block" />
             <Link
@@ -68,11 +68,24 @@ export default function About() {
               Herramientas Frontend
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              JavaScript(ES6+), React, Next.js, TypeScript,
+              JavaScript(ES6+), Angular(2+), React, TypeScript,
               React Query, HTML5, Git/GitHub, React Hook Form.
             </AnimatedBody>
           </div>
           <div>
+            <div>
+            <AnimatedTitle
+              wordSpace={"mr-[0.5ch]"}
+              charSpace={"mr-[0.001em]"}
+              className="font-bold antialiased text-xl md:text-2xl mb-2"
+            >
+              Herramientas Backend
+            </AnimatedTitle>
+            <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
+              Node.js, Express.js, Nest.js, MySQL,
+              RESTful APIs, GraphQL.
+            </AnimatedBody>
+          </div>
             <AnimatedTitle
               wordSpace={"mr-[0.5ch]"}
               charSpace={"mr-[0.001em]"}
@@ -82,7 +95,7 @@ export default function About() {
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
               CSS3/SCSS/SASS, Tailwind CSS, Styled Components, Framer
-              Motion, Bootstrap.
+              Motion, Bootstrap, Shandcn.
             </AnimatedBody>
           </div>
           <div>

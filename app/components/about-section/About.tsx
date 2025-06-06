@@ -65,11 +65,11 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              Herramientas Frontend
+              Frameworks y Lenguajes Frontend
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              JavaScript(ES6+), Angular(2+), React, TypeScript,
-              React Query, HTML5, Git/GitHub, React Hook Form.
+              JavaScript(ES6+) . Angular(2+) . React . Next.js . TypeScript .
+              React Query . HTML5 . React Hook Form.
             </AnimatedBody>
           </div>
           <div>
@@ -79,11 +79,11 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              Herramientas Backend
+              Backends y APIs
             </AnimatedTitle>
-            <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              Node.js, Express.js, Nest.js, MySQL,
-              RESTful APIs, GraphQL.
+            <AnimatedBody className="text-white/60 text-base mb-2 md:text-xl leading-8">
+              Node.js . Express.js . NestJS . MySQL .
+              RESTful APIs . GraphQL.
             </AnimatedBody>
           </div>
             <AnimatedTitle
@@ -91,11 +91,11 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              UI Librerias
+              Librerias UI/ Estilos
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
-              CSS3/SCSS/SASS, Tailwind CSS, Styled Components, Framer
-              Motion, Bootstrap, Shandcn.
+              CSS3/SCSS/SASS . Tailwind CSS . Styled Components . Framer
+              Motion . Bootstrap . Shadcn/ui.
             </AnimatedBody>
           </div>
           <div>
@@ -104,10 +104,22 @@ export default function About() {
               charSpace={"mr-[0.001em]"}
               className="font-bold antialiased text-xl md:text-2xl mb-2"
             >
-              Herramientas de Diseño
+              Diseño y UX
             </AnimatedTitle>
             <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
               Figma, UX Research, UI Design, Prototyping.
+            </AnimatedBody>
+          </div>
+          <div>
+            <AnimatedTitle
+              wordSpace={"mr-[0.5ch]"}
+              charSpace={"mr-[0.001em]"}
+              className="font-bold antialiased text-xl md:text-2xl mb-2"
+            >
+              Control de Versiones
+            </AnimatedTitle>
+            <AnimatedBody className="text-white/60 text-base md:text-xl leading-8">
+              Git . GitHub
             </AnimatedBody>
           </div>
         </div>

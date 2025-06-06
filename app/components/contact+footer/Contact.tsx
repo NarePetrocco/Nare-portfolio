@@ -29,8 +29,8 @@ export default function Contact() {
 
 
   useEffect(() => {
-  emailjs.init(process.env.NEXT_PUBLIC_PUBLIC_KEY || "0Xg_7VFbkIMsOVN4u");
-}, []);
+    emailjs.init(process.env.NEXT_PUBLIC_PUBLIC_KEY || "0Xg_7VFbkIMsOVN4u");
+  }, []);
 
   useEffect(() => {
     if (inView) setSectionInView("contact");
@@ -107,44 +107,33 @@ export default function Contact() {
       >
         {!formDisplay ? (
           <div
-            className={` ${syne.className
-              } flex justify-between items-center w-full duration-1000 ${formDisplay && "opacity-0"
-              }`}
+            className={` ${syne.className} flex justify-between items-center w-full duration-1000 ${formDisplay && "opacity-0"}`}
           >
             <div className="inline w-full">
               <AnimatedTitle
                 wordSpace={"mr-2 md:mr-[12px]"}
                 charSpace={"mr-[0.001em]"}
-                className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold pt-4 md:pt-10 lg:pt-12 "
+                className="text-xl sm:text-2xl md:text-[32px] lg:text-[40px] font-bold pt-4 md:pt-10 lg:pt-12"
               >
-                TIENES UN PROYECTO EN MENTE?
+                ¿TIENES UN PROYECTO EN MENTE?
               </AnimatedTitle>
-              <Link href="#footer" data-no-blobity>
-                <span
-                  data-blobity
-                  onClick={() => {
-                    setFormDisplay(!formDisplay);
-                  }}
-                  className="text-xl sm:text-2xl md:text-[32px] w-fit underline lg:text-[40px] font-bold leading-tight hidden sm:block lg:hidden"
-                >
-                  Ponte en contacto conmigo
-                </span>
+
+              {/* --- Elemento unificado de contacto --- */}
+              <Link
+                href="#footer"
+                data-no-blobity
+                onClick={() => setFormDisplay(!formDisplay)}
+                className={`
+      text-xl sm:text-2xl md:text-[32px] lg:text-[40px]
+      font-bold underline hover:opacity-80 transition-opacity
+      ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-16"}
+      ${viewCount <= 1 && "duration-500 delay-[1500ms]"}
+    `}
+                data-blobity
+              >
+                Ponte en contacto conmigo
               </Link>
             </div>
-            <Link href="#footer">
-              <button
-                className={`text-base ml-auto mt-6 lg:ml-0 block sm:hidden lg:block lg:text-2xl font-semibold px-4 py-2 md:px-3 lg:py-4 lg:mt-12 rounded-xl border-2 border-white leading-none ${viewCount <= 1 && "duration-500 delay-[1500ms]"
-                  } ${inView
-                    ? " opacity-100 translate-y-0"
-                    : "opacity-0 translate-y-16"
-                  }`}
-                data-blobity-radius="12"
-                onClick={() => {
-                  setFormDisplay(!formDisplay);
-                }}
-              >
-              </button>
-            </Link>
           </div>
         ) : (
           <AnimatePresence>
@@ -156,8 +145,7 @@ export default function Contact() {
               style={{
                 transform: `${formDisplay
                   ? "perspective(300px) rotateY(-180deg)"
-                  : "perspective(300px) rotateY(0deg)"
-                  }`,
+                  : "perspective(300px) rotateY(0deg)"}`,
               }}
               className="w-full"
             >
@@ -185,8 +173,7 @@ export default function Contact() {
                           message: "Please enter a valid name.",
                         },
                       })}
-                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2"
-                    />
+                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2" />
                     {errors?.userName && (
                       <span className="text-red-400 text-xs">
                         {errors?.userName?.message as string}
@@ -210,8 +197,7 @@ export default function Contact() {
                           message: "Please provide a valid email address",
                         },
                       })}
-                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2"
-                    />
+                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2" />
                     {errors?.userEmail && (
                       <span className="text-red-400 text-xs">
                         {errors?.userEmail?.message as string}
@@ -232,8 +218,7 @@ export default function Contact() {
                       })}
                       rows={4}
                       cols={50}
-                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2"
-                    />
+                      className="bg-transparent rounded-md border border-[#737373c4] focus:border-[#9f9d9dc4] outline-hidden py-1 pl-2" />
                     {errors?.userMessage && (
                       <span className="text-red-400 text-xs">
                         {errors?.userMessage?.message as string}

@@ -16,7 +16,7 @@ export default function Header() {
       <div className="fixed max-w-[90%] xl:max-w-[1223px] w-full z-10 select-none">
         <div className="flex justify-between items-center px-6 py-4 rounded-2xl bg-linear-to-r from-[#d9d9d91f] to-[#7373731f] mt-4 sm:mt-8 std-backdrop-blur">
           <Image
-            src="/ade-logo.svg"
+            src="/nare-logo.svg"
             width={32}
             height={36}
             alt="logo"
@@ -33,25 +33,25 @@ export default function Header() {
               href="#home"
               className={`${sectionInView === "home" && "text-white"} `}
             >
-              Home
+              Inicio
             </Link>
             <Link
               href="#work"
               className={`${sectionInView === "work" && "text-white"} `}
             >
-              Work
+              Proyectos
             </Link>
             <Link
               href="#about"
               className={`${sectionInView === "about" && "text-white"} `}
             >
-              About
+              Sobre mi
             </Link>
             <Link
               href="#contact"
               className={`${sectionInView === "contact" && "text-white"} `}
             >
-              Contact
+              Contacto
             </Link>
           </ul>
           <div className="gap-5 text-xl hidden sm:flex">

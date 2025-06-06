@@ -26,25 +26,25 @@ export default function MobileMenu({
           href="#home"
           className={`${sectionInView === "home" && "text-white"} w-fit`}
         >
-          Home
+          Inicio
         </Link>
         <Link
           href="#work"
           className={`${sectionInView === "work" && "text-white"} w-fit`}
         >
-          Work
+          Proyectos
         </Link>
         <Link
           href="#about"
           className={`${sectionInView === "about" && "text-white"} w-fit`}
         >
-          About
+          Sobre Mi
         </Link>
         <Link
           href="#contact"
           className={`${sectionInView === "contact" && "text-white"}  w-fit`}
         >
-          Contact
+          Contacto
         </Link>
       </ul>
 
